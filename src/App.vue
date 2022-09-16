@@ -1,22 +1,33 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Navbar/>
+  
+  <router-view class="container" />
 </template>
 
+<script>
+import Navbar from './components/Navbar.vue'
+
+export default {
+  name:'App',
+  components: {
+    Navbar
+  
+  },
+  mounted(){
+    this.$store.commit("onStart")
+  }
+}
+</script>
+
+
 <style>
+@import './assets/css/main.css';
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
 }
 
 #nav a {

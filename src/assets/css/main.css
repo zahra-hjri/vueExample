@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: "IRANSansWeb";
+    src:local("IRANSansWeb"),
+     url("./../fonts/IRANSansWeb.woff") format("woff");
+}
+*{
+    font-family: 'IRANSansWeb';
+
+}
+
+.login{
+   color: #ccc; 
+}

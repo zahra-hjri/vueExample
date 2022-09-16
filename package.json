@@ -7,8 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.67",
+    "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
+    "jquery": "^3.6.0",
+    "leaflet": "^1.8.0",
+    "popper.js": "^1.16.1",
     "vue": "^3.0.0",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
